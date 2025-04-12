@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+    <link rel="icon" type="image/png" href="image.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-bar">
+                <div class="input-wrapper" style="position: relative; width: 100%;">
+                  <input type="text" id="city-input" placeholder="Enter Any location" class="input-box">
+                  <div id="suggestions" class="autocomplete-box"></div>
+                </div>
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+        </div>
+        <div class="location_not_found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="404.png" alt="404 Error">
+        </div>
+        <div class="weather-body">
+            <img src="cloud.png" alt="Weather Image" class="weather-img">
+            <h2 class="city-name"></h2>
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-droplet"style="font-size: 36px;"></i>
+                <div class="text">
+                    <span id="humidity">45%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind" style="font-size: 36px;"></i>
+                <div class="text">
+                    <span id="wind-speed">12km/h</span>
+                    <p>Wind-speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+</body>
+
+</html>
