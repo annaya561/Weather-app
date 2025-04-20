@@ -1,5 +1,8 @@
 # Weather-app
 
+![image](https://github.com/user-attachments/assets/4bfbda24-5045-4f16-beb7-92f488b7c051)
+
+
 Detects Your Location on Load When you open the app, it automatically tries to detect your current location using your device's GPS. If permission is granted, it fetches the weather for your current coordinates and displays it on the screen.
 
 Search by City Name You can manually search for the weather in any city by entering its name in the input box. When you click the search button, it fetches the weather data for that city and shows it.
